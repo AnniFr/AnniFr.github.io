@@ -1,0 +1,136 @@
+html {
+    background-color: #71B48D;
+    color: #040404;
+    margin-bottom: 0;
+    scroll-padding-top: 200px;
+}
+
+header {
+    background-color: #13505B;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    color: #FFF8F0;
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 20px;
+    z-index: 1;
+}
+
+nav {
+    display: inline;
+    text-transform: uppercase;
+}
+
+nav a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #FFF8F0;
+  
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0px auto;
+
+}
+
+#topimg {
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+    margin: 10px auto;
+}
+
+#aboutbox {
+    background-color: #E6AF2E;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 300px;
+    padding: 10px;
+    line-height: 1.5rem;
+    float: right;
+    position: relative;
+    top: -200px;
+    right: 50px;
+}
+
+#walks {
+    background-color: #E6AF2E;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top: -155px;
+}
+
+.walkbox {
+    display: flex;
+    font-size: 1.5rem;
+    margin: 5px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.walkbox img {
+    max-width: 800px;
+    height: 500px;
+    object-fit: cover;
+    vertical-align: top;
+}
+
+h2 {
+    background-color: #13505B;
+    color: #FFF8F0;
+    padding: 10px;
+}
+
+
+figure {
+    margin: 10px;
+}
+
+figcaption {
+    background-color: #13505B;
+    color: #FFF8F0;
+    margin: auto;
+    width: fit-content;
+    padding: 5px;
+    position: relative;
+    top: -100px;
+  
+}
+
+#contact {
+    background-color: #13505B;
+    color: #FFF8F0;
+    position: relative;
+    top: -155px;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 20px;
+    line-height: 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+    
+    header {
+        font-size: 1rem;
+    }
+
+    #aboutbox {
+        position: relative;
+        top: -150px;
+        font-size: 1rem;
+    }
+
+    .walkbox {
+        flex-direction: column;
+        
+    }
+
+
+
+}
