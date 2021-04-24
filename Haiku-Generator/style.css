@@ -1,0 +1,28 @@
+html {
+            background-image: url("./images/bg.jpg");
+}
+
+body {
+            
+            font-size: 50px;
+            text-align: center;
+            
+            background-color: rgba(202, 175, 141, 0.651);
+}
+
+button {
+            color: black;        
+            background-color: seashell;
+            border: 2px solid black;
+            font-size: 50px;
+            border-radius: 8px;
+}
+
+#intro {
+            font-family: Arial, Helvetica, sans-serif;
+}
+
+.haikuspace {
+            font-family: 'Homemade Apple', cursive;
+            
+}

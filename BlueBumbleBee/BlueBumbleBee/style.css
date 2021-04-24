@@ -1,0 +1,195 @@
+body {
+    background-color: #FBF2EE;
+    font: 15px / 1 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: auto;
+}
+
+/* global */
+.container {
+    max-width: 80%;
+    display: flex;
+    overflow: visible;
+    align-content:  center;
+    justify-content: center;
+    margin: auto;
+    padding: 5px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* header */
+header {
+    background-color: #007CBE;
+    color: #FBF2EE;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 60px;
+    border-bottom: #F8C630 3px solid;
+    display: inline-flex;
+ 
+   
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+
+#logo {
+    max-width: 50%;
+    align-self: start;
+    padding-left: 20px;
+}
+
+header a {
+    color: #FBF2EE;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    justify-content: center;
+    display: inline-flex;
+    margin-right: 20px;
+    list-style-type: none;
+}
+
+header li {
+    padding: 0 20px 0 20px;
+}
+
+header #logo {
+    float: left;
+}
+
+nav {
+    float: right;
+    margin-top: 15px;
+   
+}
+
+.content {
+    position: relative;
+    top: 120px;
+}
+
+.missiontxt {
+    display: flex;
+    background-color: #007CBE;
+    color: #FBF2EE;
+    text-align: center;
+    max-width: fit-content;
+    justify-content: center;
+    margin: auto;
+    padding: 30px;
+    flex-direction: column;
+    line-height: 0;
+   
+}
+
+#mission {
+    background-image: url(media/sunflower.JPG);
+    background-size: cover;
+    background-position: center;
+    background-position-y: 25%;
+    min-height: 500px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+#products img {
+    max-width: 300px;
+  
+}
+
+#about {
+    padding: 10px;
+    margin: auto;
+    background-color: #F8C630;
+    max-width: 1000px;
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+  
+    
+}
+
+#about p {
+   
+    width: 95%;
+    text-align: center;
+    align-self: center;
+    
+}
+
+#about img {
+    object-fit: contain;
+}
+
+.abouttext {
+    align-self: end;
+}
+
+colorideas {
+    color: #F8C630;
+    color: #0D160B;
+    background-color: #FBF2EE;
+}
+
+#bee {
+    text-align: right;
+    margin: 5px;
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+}
+
+.bee {
+    min-height: 50px;
+    max-height: 100px;
+}
+
+@media only screen and (max-width: 700px) {
+
+    #about {
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .bee {
+        max-height: 50px;
+        max-width: 50px;
+    }
+
+    footer p {
+        display: none;
+    }
+
+    .headbox {
+        display: block;
+        min-height: none;
+        margin: 0;
+        padding: 5px;
+    }
+
+    #logo {
+        position: relative;
+        left: 140px;
+   
+    }
+
+    .headbox ul {
+        position: relative;
+        right: 100px;
+    }
+} 
