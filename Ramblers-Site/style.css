@@ -33,7 +33,8 @@ nav a {
 .wrapper {
     width: 90%;
     margin: 0px auto;
-
+    height: fit-content;
+    overflow: hidden;
 }
 
 #topimg {
@@ -122,7 +123,7 @@ figcaption {
 
     #aboutbox {
         position: relative;
-        top: -150px;
+        top: -200px;
         font-size: 1rem;
     }
 
@@ -131,6 +132,29 @@ figcaption {
         
     }
 
+    @media only screen and (max-width: 250px) {
 
+        .wrapper {
+            margin: 0;
+            width: 100%;
+        }
+    
+        section#about {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    
+        .walkbox img {
+            width: 100%;
+            height: clear;
+        }
+
+        #aboutbox {
+            right: 0;
+            top: 0;
+        }
+    }
 
 }
