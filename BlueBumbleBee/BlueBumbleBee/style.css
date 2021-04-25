@@ -193,3 +193,23 @@ colorideas {
         right: 100px;
     }
 } 
+
+@media only screen and (max-width: 250px) {
+
+    .wrapper {
+        margin: 0;
+        width: 100%;
+    }
+
+    section#about {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .walkbox img {
+        width: 100%;
+        height: clear;
+    }
+}
