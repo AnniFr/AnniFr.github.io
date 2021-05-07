@@ -1,0 +1,140 @@
+palette {
+    color: #272838;
+    color: #5D536B;
+    color: #7D6B91;
+    color: #989FCE;
+    color: #347FC4;
+}
+
+html {
+    background-color: #5D536B;
+    color: #989FCE;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    background-color: #272838;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    font-size: 2rem;
+}
+
+nav, h1 {
+    margin: 20px;
+}
+
+nav span {
+    padding: 1rem;
+    margin: 1rem;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #989FCE;
+}
+
+span:hover {
+    background-color: #347FC4;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 20px;
+    text-align: center;
+    
+}
+
+#about {
+    background-color: #347FC4;
+    padding: 2rem;
+    margin-top: 20px;
+    grid-area: 1 / 2 / 4 / 7;
+    font-size: 1.5rem;
+    min-width: 250px;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+#aboutbody {
+    display: flex;
+    align-items: center;
+    
+}
+
+#about img {
+    height: 200px;
+    border-radius: 25px;
+    margin: 1rem;
+}
+
+#skills {
+    grid-area: 1 / 7 / 4 / 12;
+    background-color: #7D6B91;
+    margin-top: 20px;
+    font-size: 4rem;
+    padding: 2rem;
+    min-width: 250px;
+}
+
+#skills i:hover {
+    color: #347FC4;
+}
+
+#projects {
+    grid-area: 4 / 2 / 7 / 12;
+    background-color: #272838;
+    padding: 2rem;
+}
+
+#projectsbody {
+    display: flex;
+    justify-content: space-around;
+}
+
+#projects img {
+    height: 250px;
+}
+
+#contact {
+    grid-area: 8 / 2 / 7 / 12;
+}
+
+@media only screen and (max-width: 1150px) {
+    
+    html {
+        font-size: 12px;
+    }
+    
+}
+
+@media only screen and (max-width: 975px) {
+    
+    #aboutbody {
+        flex-direction: column;
+    }
+
+    #projectsbody {
+        flex-direction: column
+        ;
+    }
+
+ 
+    
+}

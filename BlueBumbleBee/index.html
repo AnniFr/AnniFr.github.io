@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Cute independently crafted stickers">
+        <meta name="keywods" content="stickers, bullet journal, journal">
+        <meta name="author" content="Anni Frith">
+        <title>BlueBumbleBee Stickers</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script>
+            changeBorder = (eleId) => {
+                let x = document.getElementById(eleId);
+                x.style.outline = '3px solid';
+                x.style.outlineColor = '#F8C630';
+            };
+
+            undoBorder = (eleId) => {
+                let x = document.getElementById(eleId);
+                x.style.outline = 'none';
+            }
+        </script>
+    </head>
+
+    <body>
+        <header>
+            <div class="headbox">       
+                    <img src="media/logo.png" id="logo">  
+         
+                <nav>
+                    <ul>
+                        <li><a href="#mission">Mission</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="content">
+            <div id="mission" class="container">
+            <div class="missiontxt">
+                <h1>Mission</h1>
+                <p>Creating cute stickers to customize your world.</p>                    
+            </div>
+            </div>
+       
+                           
+            <section id="products">
+                <h1>Products</h1> 
+                <div class="container">                
+                <figure class="item" >
+                    <img onmouseover="changeBorder(this.id)" onmouseout="undoBorder(this.id)" src="media/japfood sheet.jpg" id="jap">
+                    <figcaption>Japanese Food Sticker Sheet</figcaption>
+                    <h4 class="price">£1</h4>
+                </figure>
+                <figure class="item">
+                    <img src="media/multicol cart sheet.jpg"onmouseover="changeBorder(this.id)" onmouseout="undoBorder(this.id)" id="cart">
+                    <figcaption>Game Cartridges Sticker Sheet</figcaption>
+                    <h4 class="price">£1</h4>
+                </figure>
+                <figure class="item">
+                    <img src="media/weathersheet.jpg" onmouseover="changeBorder(this.id)" onmouseout="undoBorder(this.id)" id="weather">
+                    <figcaption>Weather Sticker Sheet</figcaption>
+                    <h4 class="price">£1</h4>
+                </figure>                        
+                <figure class="item">
+                    <img src="media/lily.jpg" onmouseover="changeBorder(this.id)" onmouseout="undoBorder(this.id)" id="lily">
+                    <figcaption>Pink Stargazer Sticker</figcaption>
+                    <h4 class="price">£1</h4>
+                </figure>
+                <figure class="item">
+                    <img src="media/poppy.JPEG" onmouseover="changeBorder(this.id)" onmouseout="undoBorder(this.id)" id="poppy">
+                    <figcaption>Poppy Sticker</figcaption>
+                    <h4 class="price">£1</h4>
+                </figure>
+                <figure class="item">
+                    <img src="media/violet.JPEG" onmouseover="changeBorder(this.id)" onmouseout="undoBorder(this.id)" id="violet">
+                    <figcaption>Violet Sticker</figcaption>
+                    <h4 class="price">£1</h4>
+                </figure>          
+            </div>
+        </section>
+            
+        <section id="about">
+                <div class="abouttext">
+                    <h1>About Me</h1>
+                <p>I am an independant artist based in the UK. I love creating custom sticker designs for my bullet journal spreads and created BlueBumbleBee to share my ideas with other journalers.</p>
+                </div>
+                <div class="me"><img src="media/me.jpg"></div>
+        </section>
+    </section>
+    </body>
+    <footer>
+        <br>
+        <div id="bee">
+        <img src="media/bee.png" class="bee">
+        <p>	&#169; BlueBumbleBee</p></div>
+    </footer>
+
+
+</html>
