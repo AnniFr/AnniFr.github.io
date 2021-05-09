@@ -18,9 +18,12 @@ const openPopup = () => {
             document.getElementById('sitelink').href = './Ramblers-site/index.html';
             break;
     }
+
+    const overlay = document.getElementById('overlay');
+    overlay.addEventListener('click', closePopup);
 }
 
-const closePopup = (eleID) => {
+const closePopup = () => {
     document.getElementById('overlay').style.display = '';
     document.getElementById('popbox').style.display = '';
 }
@@ -34,3 +37,5 @@ for(let i = 0; i < projects.length; i++) {
 //makes button close popup and remove overlay
 const btn = document.getElementById('closeButton');
 btn.addEventListener('click', closePopup);
+
+

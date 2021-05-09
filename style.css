@@ -115,6 +115,10 @@ h2 {
     width: 250px;
 }
 
+#projects img:hover {
+    cursor: pointer;
+}
+
 #contact {
     grid-area: 8 / 2 / 7 / 12;
 }
@@ -142,6 +146,7 @@ button {
 button:hover {
     background-color: #989FCE;
     color: #347FC4;
+    cursor: pointer;
 }
 
 
