@@ -4,9 +4,12 @@
         <title>Anni Frith Portfolio</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js" defer></script>
+        
     </head>
 
     <body>
+        
         <header>
             <h1>Anni Frith</h1>
             <nav>
@@ -17,8 +20,9 @@
             </nav>
         </header>
         <!-- About section-->
-        
+        <div id="overlay"></div>
         <div class="wrapper">
+            
             <div id="about">
                 <h2>About Me</h2>
                 <div id="aboutbody">
@@ -31,16 +35,16 @@
             <div id="projects">
                 <h2>Projects</h2>
                 <div id="projectsbody">
-                <a href="./Haiku-Generator/index.html"><img src="images/haikugen.jpg"></a>
-                <a href="./BlueBumbleBee/index.html"> <img src="images/bluebee.png"></a>
-                <a href="./Ramblers-Site/index.html"> <img src="images/clubsite.jpg"> </a>
+                <img src="images/haikugen.jpg" id="haiku" class="project">
+                <img src="images/bluebee.png" id="bluebee" class="project">
+                <img src="images/clubsite.jpg" id="club" class="project">
             </div>
             </div>
 
             <!-- Skills section-->
             <div id="skills">
                 <h2>Skills</h2>
-                <br>
+                
                 <i class="devicon-html5-plain-wordmark"></i>
                 <i class="devicon-css3-plain"></i>
                 <i class="devicon-javascript-plain"></i>
@@ -58,6 +62,15 @@
                 <p>Email: annni.frith@gmail.com</p>
                 <p>GitHub: https://github.com/AnniFr</p>
             </div>
+
+            <div id="popbox" hidden>               
+                <div class="container">
+                <p id="ptext"></p>
+                <div id="buttons"><a id="sitelink" href="#"><button>Go to site</button></a>
+                <button id="closeButton">Close</button></div>
+                </div>
+            </div>
+
         </div>
     </body>
 
