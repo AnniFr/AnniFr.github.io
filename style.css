@@ -37,7 +37,7 @@ nav span {
 
 a {
     text-decoration: none;
-    color: #989FCE;
+    color: #bac0de;
 }
 
 span:hover {
@@ -134,17 +134,17 @@ h2 {
 
 button {
     background-color: #347FC4;
-    color: #989FCE;
+    color: #bac0de;
     padding: .5rem;
     margin: .5rem;
-    border: 3px solid #989FCE;
+    border: 3px solid #bac0de;
     border-radius: 10px;
     font-size: 1rem;
     font-weight: bold;
 }
 
 button:hover {
-    background-color: #989FCE;
+    background-color: #bac0de;
     color: #347FC4;
     cursor: pointer;
 }
